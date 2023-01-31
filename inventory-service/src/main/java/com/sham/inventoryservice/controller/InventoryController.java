@@ -6,6 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/inventory")
@@ -15,12 +17,13 @@ public class InventoryController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/post")
-    public ResponseEntity<?> create(){
-        return new ResponseEntity<>("Created successfully!", HttpStatus.CREATED);
+    public ResponseEntity<?> create(@RequestParam("skuCode") String skuCode,
+                                    @RequestParam("quantity") int quantity){
+        return new ResponseEntity<>(inventoryService.createInventory(skuCode, quantity), HttpStatus.CREATED);
     }
 
-    @GetMapping("/get/{sku-code}")
-    public ResponseEntity<?> get(@PathVariable("sku-code") String skuCode){
+    @GetMapping("/get")
+    public ResponseEntity<?> get(@RequestParam List<String> skuCode){
         return new ResponseEntity<>(inventoryService.isInStock(skuCode), HttpStatus.OK);
     }
 

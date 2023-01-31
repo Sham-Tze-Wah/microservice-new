@@ -7,13 +7,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+//import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 import java.math.BigDecimal;
 
 @SpringBootApplication
 @EnableEurekaClient
 @RequiredArgsConstructor
-public class ProductServiceApplication implements CommandLineRunner {
+public class ProductServiceApplication {
 
     private final ProductRepository productRepository;
 
@@ -21,15 +22,15 @@ public class ProductServiceApplication implements CommandLineRunner {
         SpringApplication.run(ProductServiceApplication.class, args);
     }
 
-    @Override
-    public void run(String... args) {
-        if (productRepository.count() < 1) {
-            Product product = new Product();
-            product.setName("iPhone 13");
-            product.setDescription("iPhone 13");
-            product.setPrice(BigDecimal.valueOf(1000));
-
-            productRepository.save(product);
-        }
-    }
+//    @Override
+//    public void run(String... args) {
+//        if (productRepository.count() < 1) {
+//            Product product = new Product();
+//            product.setName("iPhone 13");
+//            product.setDescription("iPhone 13");
+//            product.setPrice(BigDecimal.valueOf(1000));
+//
+//            productRepository.save(product);
+//        }
+//    }
 }
