@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -26,6 +27,12 @@ public class ProductController {
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse> getAllProducts() {
         return productService.getAllProducts();
+    }
+
+    @DeleteMapping()
+    @ResponseStatus(HttpStatus.OK)
+    public List<ProductResponse> deleteProduct(@RequestParam("id") String[] id){
+        return productService.deleteProducts(Arrays.asList(id.clone()));
     }
 
 }

@@ -13,12 +13,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../discovery-server/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../discovery-server/src/main/java/com/sham/discoveryservice/DiscoveryServerApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../discovery-server/src/main/java/com/sham/discoveryservice/config/SecurityConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/api-gateway/pom.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/api-gateway/src/main/java/com/sham/apigateway/ApiGatewayApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/api-gateway/src/main/java/config/SecurityConfig.java">
           <value>
             <set />
           </value>
@@ -34,6 +54,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/discovery-server/src/main/java/com/sham/discoveryservice/DiscoveryServerApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/discovery-server/src/main/java/com/sham/discoveryservice/config/SecurityConfig.java">
           <value>
             <set />
           </value>
@@ -103,6 +128,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/order-service/src/main/java/com/sham/orderservice/controller/OrderController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/order-service/src/main/java/com/sham/orderservice/service/OrderService.java">
           <value>
             <set />
@@ -144,6 +174,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/product-service/src/test/java/com/programmingtechie/productservice/ProductServiceApplicationTests.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WorkSpace/tng/tng-irs-masterdata/src/main/resources/bootstrap.yml">
           <value>
             <set />
           </value>
